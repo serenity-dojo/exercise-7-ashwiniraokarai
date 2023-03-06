@@ -1,17 +1,16 @@
 package com.serenitydojo;
 
 import com.serenitydojo.model.Feeder;
+import com.serenitydojo.model.FoodType;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class WhenFeedingTheAnimals {
-
     @Test
     public void shouldFeedCatsTuna() {
         Feeder feeder = new Feeder();
 
         String food = feeder.feeds("Cat", false);
-
         Assert.assertEquals("Tuna", food);
     }
 
