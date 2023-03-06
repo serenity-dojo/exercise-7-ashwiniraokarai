@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Exercise",
+      "setup": "",
+      "run": "mvn clean verify",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
