@@ -5,9 +5,10 @@ public class Feeder {
         if (animal.equals("Cat")) {
             return (isPremium) ? FoodType.SALMON : FoodType.TUNA;
         } else if (animal.equals("Dog")) {
-            return FoodType.DOG_FOOD;
-        }
-
+            return (isPremium) ? FoodType.DELUXE_DOG_FOOD : FoodType.DOG_FOOD;
+        } else if (animal.equals("hamster")) {
+            return (isPremium) ? FoodType.LETTUCE : FoodType.CABBAGE;
+        } else
         return FoodType.CABBAGE;
     }
 
